@@ -329,6 +329,86 @@
 
 .product-item {
   max-width: 370px;
+  text-align: center;
+  &.product-item--list {
+    min-width: 100%;
+    display: flex;
+    text-align: left;
+    &:hover {
+      .product-item__link-box {
+        transform: translateY(-280%);
+      }
+    }
+    .product-item__img-box {
+      height: 250px;
+      min-width: 200px;
+      margin-bottom: 0;
+      img {
+        height: 250px;
+      }
+    }
+    .product-item__link-box {
+      bottom: auto;
+      background-color: transparent;
+      width: 155px;
+      box-shadow: none;
+      .product-item__link {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .product-item__link--line {
+        display: none;
+      }
+    }
+    .product-item__content-box {
+      display: block;
+    }
+    .product-item__wrapper-box {
+      padding: 30px 40px;
+      border: 1px solid #ececec;
+      border-left: none;
+    }
+    .product-item__box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .product-item__title {
+      width: 100%;
+      order: -1;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+    .product-item__text {
+      margin-bottom: 20px;
+    }
+    .product-item__btn {
+      color: #fff;
+      padding: 11px 40px;
+      background-color: $title;
+      border: none;
+      &:hover {
+        background-color: $accent;
+        box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+        cursor: pointer;
+      }
+    }
+    .product-item__price {
+      order: -1;
+      margin-left: -12px;
+    }
+    .star {
+      margin-left: 23px;
+    }
+  }
+  &__content-box {
+    display: none; 
+  }
   &:hover {
     .product-item__link-box {
       transform: translateY(0);
@@ -761,11 +841,7 @@
     }
   }
   &__input {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    position: relative;
+    @extend %checkbox-hidden;
     &:checked + .filter-color__checkbox {
       background-image: url('../images/icons/ok.svg');
       background-repeat: no-repeat;
@@ -799,6 +875,152 @@
   }
 }
 
+.filter-size {
+  &__label {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-size__checkbox{
+      background-image: url('../images/icons/ok2.svg');
+      background-repeat: no-repeat;
+      border: none;
+      & + .filter-size__text {
+        color:  $accent;
+      }
+    }
+  }
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $default;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 3px;
+  }
+}
+
+.filter-category {
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+  &__checkbox {
+    color: $title;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+}
+
+.filter-popular {
+  &__label {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 10px 0;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-popular__checkbox {
+      background-color: $accent;
+      color: #fff;
+      border-color: $accent;
+    }
+  }
+  &__checkbox {
+    color: #8d8d8d;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #8d8d8d;
+  }
+}
+
+
+.shop-content {
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ececec;
+    .product-item {
+      margin-bottom: 40px;
+    }
+  }
+  &__filter {
+    border: 1px solid #ececec;
+    padding: 20px 25px 20px 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__filter-buttons {
+    display: flex;
+    align-items: center;
+  }
+  &__filter-btn {
+    outline: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 15px;
+    line-height: 0;
+  }
+  &__filter-btn--active {
+    path {
+      fill: $accent;
+    }
+  }
+}
+
+.jq-selectbox__select {
+    margin-left: 30px;
+    height: 32px;
+    padding: 0 30px 0 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    @extend %quicksand-500;
+    color: $default;
+    text-shadow: none;
+    &:hover {
+      background: transparent;
+    }
+
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 5px;
+  border: none;
+  background-image: url('../images/icons/angle-down.svg');
+}
 
 
 
