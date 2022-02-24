@@ -1,5 +1,16 @@
 $(function () {
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.footer-top__title').on('click', function () {
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('active');
+    //Сворачивает список лишек, удобно для футера, sublings позволяет обратиться к соседнему классу, за счет этого при клике на конкретный из двух тайтлов сосед, а именно - лист, сворачивается за счет слайд тоггл.
+
+  });
+
 
   let map;
 
