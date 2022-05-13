@@ -21,8 +21,10 @@
   &__item {
     max-width: 370px;
     border: 1px solid #ececec;
+    transition: all .3s ease-in-out;
     &:hover {
       box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+      transition: all .3s ease-in-out;
       .blog__item-link {
         color: $accent;
         svg {
@@ -114,7 +116,7 @@
 
 @media (max-width: 768px) {
   .blog {
-    padding: 60px 0; 
+    padding: 60px 0;
     &__items {
       grid-template-columns: repeat(1, 1fr);
     }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="css/shop.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -12,7 +12,7 @@
     <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="images/logo.png" alt="logo">
       </a>
       <nav class="menu">
@@ -21,34 +21,34 @@
         </button>
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a class="menu__list-link menu__list-link--active" href="#">home</a>
+            <a class="menu__list-link" href="index.html">home</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">shop</a>
+            <a class="menu__list-link" href="shop.html">shop</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">page</a>
+            <a class="menu__list-link" href="login.html">page</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">blog</a>
+            <a class="menu__list-link" href="blog.html">blog</a>
           </li>
           <li class="menu__list-item">
-            <a class="menu__list-link" href="#">contact</a>
+            <a class="menu__list-link" href="contacts.html">contact</a>
           </li>
         </ul>
       </nav>
       <div class="user-nav">
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__link" href="login.html">
           <img src="images/icons/user.svg" alt="" class="user-nav__link-img">
         </a>
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__link" href="shop.html">
           <img src="images/icons/search.svg" alt="" class="user-nav__link-img">
         </a>
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__link" href="login.html">
           <img src="images/icons/heart.svg" alt="" class="user-nav__link-img">
           <span class="user-nav__num">3</span>
         </a>
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__link" href="login.html">
           <img src="images/icons/cart.svg" alt="" class="user-nav__link-img">
           <span class="user-nav__num">7</span>
         </a>
@@ -57,17 +57,17 @@
   </div>
 </header>
     <main class="main">
-      <section class="top">
+    <section class="top">
   <div class="top__container" style="background-image: url('images/top-bg.jpg');">
     <div class="container">
-      <h2 class="top__title title">LOG IN</h2>
+      <h2 class="top__title title">SHOP</h2>
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Home</a>
+            <a class="breadcrumbs__link" href="index.html">Home</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Log in</a>
+            <a class="breadcrumbs__link" href="#">Shop</a>
           </li>
         </ul>
       </div>
@@ -287,15 +287,15 @@
                   <form class="shop-content__filter-form" action="#">
                     <select class="shop-content__filter-sort select-style">
                       <option value="">Sort By Default</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
+                      <option value="">Sort Not By Default</option>
+                      <option value="">Sort Randomly</option>
+                      <option value="">Sort as you wish</option>
                     </select>
                     <select class="shop-content__filter-show select-style">
-                      <option value="">Show 9</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
+                      <option value="">Show 10</option>
+                      <option value="">Show 4</option>
+                      <option value="">Show 6</option>
+                      <option value="">Show 8</option>
                     </select>
                   </form>
                 </div>
@@ -303,9 +303,11 @@
               <div class="shop-content__inner">
                 <div class="product-item product-item--sale">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/2.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -317,7 +319,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -333,7 +335,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -357,7 +359,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -375,9 +379,11 @@
                 </div>
                 <div class="product-item">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/1.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -389,7 +395,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -405,7 +411,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -429,7 +435,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -447,9 +455,11 @@
                 </div>
                 <div class="product-item">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/3.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -461,7 +471,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -477,7 +487,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -501,7 +511,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -519,9 +531,11 @@
                 </div>
                 <div class="product-item product-item--sale">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/4.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -533,7 +547,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -549,7 +563,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -573,7 +587,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -591,9 +607,11 @@
                 </div>
                 <div class="product-item">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/5.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -605,7 +623,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -621,7 +639,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -645,7 +663,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -663,9 +683,11 @@
                 </div>
                 <div class="product-item product-item--sale">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/6.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -677,7 +699,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -693,7 +715,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -717,7 +739,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -735,9 +759,11 @@
                 </div>
                 <div class="product-item">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/3.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -749,7 +775,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -765,7 +791,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -789,7 +815,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -807,9 +835,11 @@
                 </div>
                 <div class="product-item product-item--sale">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/4.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -821,7 +851,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -837,7 +867,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -861,7 +891,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -879,9 +911,11 @@
                 </div>
                 <div class="product-item">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/5.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -893,7 +927,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -909,7 +943,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -933,7 +967,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -951,9 +987,11 @@
                 </div>
                 <div class="product-item product-item--sale">
                   <div class="product-item__img-box">
+                  <a href="product.html" class="product-item__img-link">
                     <img class="product-item__images" src="images/product/6.jpg" alt="product">
+                  </a>
                     <div class="product-item__link-box">
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="shop.html">
                         <svg width="19px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -965,7 +1003,7 @@
                               11.185,14.046 7.947,14.046 C4.711,14.046 2.078,11.367 2.078,8.075 C2.078,4.785 4.711,2.106 7.947,2.106 L7.947,2.106 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link product-item__link--line" href="#">
+                      <a class="product-item__link product-item__link--line" href="login.html">
                         <svg width="16px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -981,7 +1019,7 @@
                               13.003,18.902 L13.003,18.902 Z"/>
                         </svg>
                       </a>
-                      <a class="product-item__link" href="#">
+                      <a class="product-item__link" href="login.html">
                         <svg width="23px" height="20px">
                           <path
                             fill-rule="evenodd"
@@ -1005,7 +1043,9 @@
                   <div class="product-item__wrapper-box">
                     <div class="product-item__box">
                       <div class="star" data-rateyo-rating='4.7'></div>
+                      <a href="product.html" class="product-item__title-link">
                       <h4 class="product-item__title">White Polo Men’s T-Shirt</h4>
+                      </a>
                       <div class="product-item__price">
                         <div class="product-item__new-price">$34.00</div>
                         <div class="product-item__old-price">$27.00</div>
@@ -1118,19 +1158,19 @@
         </h6>
         <ul class="footer-top__list">
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">About Us</a>
+            <a class="footer-top__link" href="404.html">About Us</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Privacy Policy</a>
+            <a class="footer-top__link" href="404.html">Privacy Policy</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Terms & Conditions</a>
+            <a class="footer-top__link" href="404.html">Terms & Conditions</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Contact Us</a>
+            <a class="footer-top__link" href="contacts.html">Contact Us</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Help & Support</a>
+            <a class="footer-top__link" href="404.html">Help & Support</a>
           </li>
         </ul>
       </div>
@@ -1140,19 +1180,19 @@
         </h6>
         <ul class="footer-top__list">
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">My Account</a>
+            <a class="footer-top__link" href="login.html">My Account</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">My Cart</a>
+            <a class="footer-top__link" href="login.html">My Cart</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">My Wishlist</a>
+            <a class="footer-top__link" href="login.html">My Wishlist</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Registration</a>
+            <a class="footer-top__link" href="register.html">Registration</a>
           </li>
           <li class="footer-top__item">
-            <a class="footer-top__link" href="#">Check Out</a>
+            <a class="footer-top__link" href="404.html">Check Out</a>
           </li>
         </ul>
       </div>

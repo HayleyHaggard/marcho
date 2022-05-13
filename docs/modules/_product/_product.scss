@@ -7,12 +7,9 @@
     grid-gap: 45px 30px;
   }
   &__link {
-    text-transform: uppercase;
-    color: $title;
-    display: inline-block;
-    border: 1px solid $accent;
-    padding: 14px 27px;
-    margin-top: 55px;
+    z-index: 1;
+    @extend %btn-white;
+    margin-top: 30px;
   }
 }
 
@@ -158,6 +155,11 @@
     color: $title;
     font-size: 22px;
     padding: 15px 0 20px;
+    transition: color .2s ease-in-out;
+    &:hover {
+      transition: color .2s ease-in-out;
+      color: $accent;
+    }
   }
   &__price {
     display: flex;

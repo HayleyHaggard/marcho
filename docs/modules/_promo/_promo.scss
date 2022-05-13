@@ -39,12 +39,9 @@
     }
   }
   &__link {
-    text-transform: uppercase;
-    color: $title;
-    display: inline-block;
-    border: 1px solid $accent;
-    padding: 14px 27px;
     margin-top: 55px;
+    @extend %btn-white;
+    z-index: 1;
   }
 }
 

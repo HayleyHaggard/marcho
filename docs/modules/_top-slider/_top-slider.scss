@@ -28,8 +28,7 @@
     margin-bottom: 55px;
   }
   &__link {
-    @extend %btn;
-    padding: 14px 35px;
+    @extend %btn-white;
   }
   .slick-dots {
     display: flex;

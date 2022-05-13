@@ -1,5 +1,6 @@
 .header {
   padding: 40px 0;
+  background-color: #fff;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -24,16 +25,13 @@
     padding: 0 2px 1px;
     transition: all 0.3s;
     @extend %roboto-400;
+    transition: all .3s ease-in-out;
     &:hover {
+      transition: all .3s ease-in-out;
       @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
     }
-  }
-  &__list-link--active {
-    @extend %roboto-700;
-    color: $accent;
-    border-bottom: 1px solid $accent;
   }
 }
 
@@ -42,7 +40,7 @@
   &__link {
     position: relative;
   }
-  &__link + .user-nav__link {
+  &__link+.user-nav__link {
     padding-left: 25px;
   }
   &__num {
@@ -62,7 +60,7 @@
 
 @media (max-width: 1200px) {
   .header {
-    &__inner  {
+    &__inner {
       padding-right: 10px;
     }
   }
@@ -89,7 +87,7 @@
       }
     }
     &__list-item:not(:last-child) {
-    padding-right: 15px;
+      padding-right: 15px;
     }
     &__list-item {
       width: 100%;

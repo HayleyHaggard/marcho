@@ -37,7 +37,8 @@
     margin-bottom: 55px;
   }
   &__link {
-    @extend %btn;
+    z-index: 1;
+    @extend %btn-white;
   }
 }
 
