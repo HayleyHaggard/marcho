@@ -32,16 +32,17 @@ footer {
     align-items: center;
     margin-top: 30px;
   }
-  &__social-item + .footer-top__social-item {
+  &__social-item+.footer-top__social-item {
     padding-left: 18px;
   }
   &__social-link {
-    transition: all 3s;
     path {
       fill: $default;
     }
     &:hover {
+      transition: all .2s ease-in-out;
       path {
+        transition: all .2s ease-in-out;
         fill: $accent;
       }
     }
@@ -57,6 +58,10 @@ footer {
   &__link {
     display: block;
     margin-bottom: 14px;
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: $accent;
+    }
   }
   &__text {
     margin-bottom: 25px;
@@ -74,7 +79,6 @@ footer {
     }
   }
   &__form-btn {
-    border: none;
     padding: 12px 26px;
     @extend %btn;
   }

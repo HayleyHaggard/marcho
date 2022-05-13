@@ -3,7 +3,6 @@ $(function () {
   $('.shop__filter-btn').on('click', function () {
     $('.shop__filters').slideToggle();
   });
-  //наглядный пример как сделать выдвигающийся список при клике на кнопку, просто и без наворотов
 
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
@@ -12,7 +11,6 @@ $(function () {
   $('.footer-top__title').on('click', function () {
     $(this).siblings().slideToggle();
     $(this).toggleClass('active');
-    //Сворачивает список liшек, удобно для футера, siblings позволяет обратиться к соседнему классу, за счет этого, при клике на конкретный из двух тайтлов, сосед, а именно - лист, сворачивается за счет слайд тоггл. 
   });
 
 
@@ -46,7 +44,7 @@ $(function () {
 
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
-    draggable: false, //вроде отвечает за то, сможет ли пользователь переключать слайды
+    draggable: false,
     arrows: false,
     fade: true,
     responsive: [
@@ -96,7 +94,7 @@ $(function () {
     infinite: false,
     fade: true,
     autoplay: true,
-    autoplaySpead: 5000
+    autoplaySpead: 3000
   });
 
   $('.top-slider__inner').slick({
@@ -104,7 +102,7 @@ $(function () {
     arrows: false,
     fade: true,
     autoplay: true,
-    autoplaySpead: 5000
+    autoplaySpead: 3000
   });
 
   $(".star").rateYo({
