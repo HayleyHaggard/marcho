@@ -1,9 +1,7 @@
-
-
 const { src, dest, watch, parallel, series } = require('gulp');
 
 const scss = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat'); //объединяет файлы
+const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
@@ -21,7 +19,6 @@ function browsersync() {
   });
 }
 
-// Подключаем пдлагин нунчаки, для инклуда файлов html в html
 function nunjucks() {
   return src('app/*.njk')
     .pipe(nunjucksRender())
@@ -32,7 +29,6 @@ function nunjucks() {
 function styles() {
   return src('app/scss/*.scss')
     .pipe(scss({ outputStyle: 'compressed' }))
-    // .pipe(concat())
     .pipe(rename({
       suffix: '.min'
     }))
@@ -43,20 +39,6 @@ function styles() {
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
-
-// Было
-// function styles() {
-//   return src('app/scss/style.scss')
-//     .pipe(scss({ outputStyle: 'compressed' }))
-//     .pipe(concat('style.min.css'))
-//     .pipe(autoprefixer({
-//       overrideBrowserslist: ['last 10 versions'],
-//       grid: true
-//     }))
-//     .pipe(dest('app/css'))
-//     .pipe(browserSync.stream())
-// }
-
 
 function images() {
   return src('app/images/**/*.*')
